@@ -12,11 +12,15 @@ $(document).ready(function() {
     var nounInput = $("input#noun").val();
 */
 
+  for (var index = 0; index < blanks.length; index += 1) {
+    var userInput = $("input#" + blank).val();
+    $("." + blank).text(userInput);
+  }
 
-    blanks.forEach(function(blank) {
-      var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput);
-    });
+    // blanks.forEach(function(blank) {
+    //   var userInput = $("input#" + blank).val();
+    //   $("." + blank).text(userInput);
+    // });
 /*
     $(".person1").text(person1Input);
     $(".person2").text(person2Input);
